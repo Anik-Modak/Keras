@@ -11,6 +11,11 @@ from keras.utils import to_categorical
 # learn from. The model will then be tested on the test set, test_images and test_labels .
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
 
+#--------------------------------------------------------------------------------------
+# To know about MNIST data set(How does look mnist train_images, train Lables)
+# https://github.com/Nahid-Hassan/Keras/blob/master/mnist%20dataset%20observation.py
+#---------------------------------------------------------------------------------------
+
 # To build network
 network = models.Sequential()
 network.add(layers.Dense(512, activation='relu', input_shape=(28 * 28,)))
