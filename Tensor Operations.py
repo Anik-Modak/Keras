@@ -86,3 +86,29 @@ print(x.shape)  # (6, 1)
  R = [u, v] , where u and v are both vectors of the plane: u = [cos(theta),
  sin(theta)] and v = [-sin(theta), cos(theta)] .
 '''
+
+# 2.3.6 A geometric interpretation of deep learning
+'''
+ You just learned that neural networks consist entirely of chains of tensor operations and
+ that all of these tensor operations are just geometric transformations of the input data.
+ It follows that you can interpret a neural network as a very complex geometric transfor-
+ mation in a high-dimensional space, implemented via a long series of simple steps.
+    In 3D , the following mental image may prove useful. Imagine two sheets of colored
+ paper: one red and one blue. Put one on top of the other. Now crumple them
+ together into a small ball. That crumpled paper ball is your input data, and each sheet
+ of paper is a class of data in a classification problem. What a neural network (or any
+ other machine-learning model) is meant to do is figure out a transformation of the
+ paper ball that would uncrumple it, so as to make the two classes cleanly separable
+ again. With deep learning, this would be implemented as a series of simple transfor-
+ mations of the 3D space, such as those you could apply on the paper ball with your fin-
+ gers, one movement at a time.
+
+    Uncrumpling paper balls is what machine learning is about: finding neat representa-
+ tions for complex, highly folded data manifolds. At this point, you should have a
+ pretty good intuition as to why deep learning excels at this: it takes the approach of
+ incrementally decomposing a complicated geometric transformation into a long
+ chain of elementary ones, which is pretty much the strategy a human would follow to
+ uncrumple a paper ball. Each layer in a deep network applies a transformation that
+ disentangles the data a little—and a deep stack of layers makes tractable an extremely
+ complicated disentanglement process.
+'''
