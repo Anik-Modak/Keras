@@ -50,7 +50,7 @@ print(x_train.shape, ' ', y_train.shape)  # (42000, 784)   (42000, 10)
 # softmax and relu activation: http://sefiks.com/wp-content/uploads/2017/08/relu-and-softplus.png?w=600
 # some other activation function: https://cdn-images-1.medium.com/max/1600/1*p_hyqAtyI8pbt2kEl6siOQ.png
 
-model = Sequential()
+model= Sequential()
 model.add(Dense(128, input_dim=input_dim))
 model.add(Activation('relu')) 
 model.add(Dropout(0.15))
@@ -59,3 +59,4 @@ model.add(Activation('relu'))
 model.add(Dropout(0.15))
 model.add(Dense(nb_classes))
 model.add(Activation('softmax'))
+
