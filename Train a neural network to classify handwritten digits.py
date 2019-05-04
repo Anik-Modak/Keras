@@ -5,6 +5,9 @@ from keras.datasets import mnist
 from keras import models
 from keras import layers 
 from keras.utils import to_categorical
+import os
+import tensorflow as tf
+from tensorflow import keras
 
 # load mnist data using load_data() method
 # train_images and train_labels form the training set, the data that the model will
@@ -92,3 +95,5 @@ OMP: Info #250: KMP_AFFINITY: pid 18150 tid 18206 thread 8 bound to OS proc set 
 10000/10000 [==============================] - 1s 55us/step
 test_acc:  0.9793
 '''
+
+network.save('my_model.h5')
